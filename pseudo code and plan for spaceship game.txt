@@ -1,0 +1,10 @@
+pseudo code and plan for spaceship game
+
+
+Home Screen: 
+
+Play Screen:
+
+Start Initialization: 
+    Light off -> on
+    on platform -> flying

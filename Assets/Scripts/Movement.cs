@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     public Quaternion QuatTarget;
     public Vector3 reverseQuaternion;
     public float lerpTime;
-    //public Joystick joystick;
+    public Joystick joystick;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +24,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    //    horizontalMovement = joystick.Horizontal*movementSpeed;
-    //    verticalMovement = joystick.Vertical*movementSpeed;
+        horizontalMovement = joystick.Horizontal*movementSpeed;
+        verticalMovement = joystick.Vertical*movementSpeed;
         reverseQuaternion = new Vector3(verticalMovement*rotationMagnitude, 0, horizontalMovement * rotationMagnitude);
         QuatTarget = Quaternion.Euler(reverseQuaternion);
         transform.rotation=Quaternion.Lerp(transform.rotation,QuatTarget,Time.deltaTime * lerpTime);
