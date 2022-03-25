@@ -8,3 +8,23 @@ Play Screen:
 Start Initialization: 
     Light off -> on
     on platform -> flying
+
+
+
+
+Current plans for next work session:
+
+blender: create tube that will repeat itself
+create power up tokens
+	speed boost
+	coin magnet
+	
+create coins
+	coins can have different movement patterns and different colors
+		clump (arranged in a filled hexagonal shape)
+		line (can be a moving line) (both x and y direction motions)
+generate more interestng tunnel scenes
+	options: meteors surrounding
+		   techy view: black with blue glowing lines
+Generate UI elements for screen
+	pause button, pause screen 
