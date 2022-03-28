@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public Vector3 reverseQuaternion;
     public float lerpTime;
     public Joystick joystick;
+    public float sp;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class Movement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        rigidBody.velocity = new Vector3(horizontalMovement, verticalMovement, 0);
+        rigidBody.velocity = new Vector3(horizontalMovement, verticalMovement, sp);
         // Quaternion target = Quaternion.Euler(verticalMovement*rotationMagnitude,horizontalMovement*rotationMagnitude,0);
     }
 }

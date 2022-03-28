@@ -10,13 +10,15 @@ public class collision : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider target)
+    private void OnTriggerEnter(Collider other)
     {
-        if (target.transform.gameObject.name=="shipSprite")
-        {
+      //  if (target.transform.gameObject.name=="shipSprite")
+       // {
         //    col=true;
-            Object.Destroy(gameObject);
-        }
+            //Object.Destroy(gameObject);
+            this.gameObject.SetActive(false);
+            Debug.Log("hello");
+        //}
     }
 
     // Update is called once per frame
