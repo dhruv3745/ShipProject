@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fda841f1ce63e4d4d9ead93b46c821a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  z: 50
+  rotateSpeed: 5
 --- !u!64 &637221560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1222,6 +1222,7 @@ MonoBehaviour:
   reverseQuaternion: {x: 0, y: 0, z: 0}
   lerpTime: 2
   joystick: {fileID: 1522275198}
+  sp: 5.76
 --- !u!64 &1709304677
 MeshCollider:
   m_ObjectHideFlags: 0

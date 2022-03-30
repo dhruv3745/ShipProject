@@ -16,8 +16,8 @@ public class collision : MonoBehaviour
        // {
         //    col=true;
             //Object.Destroy(gameObject);
-            this.gameObject.SetActive(false);
             Debug.Log("hello");
+            this.gameObject.SetActive(false);
         //}
     }
 
@@ -28,3 +28,5 @@ public class collision : MonoBehaviour
     //    }
     }
 }
+
+
