@@ -28,3 +28,8 @@ generate more interestng tunnel scenes
 		   techy view: black with blue glowing lines
 Generate UI elements for screen
 	pause button, pause screen 
+
+
+materials link:
+https://freepbr.com/c/base-metals/
+https://3dtextures.me/category/metal/
