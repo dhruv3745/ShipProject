@@ -12,11 +12,11 @@ public class collision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-      //  if (target.transform.gameObject.name=="shipSprite")
+      if (other.tag=="ShipChar")
        // {
         //    col=true;
             //Object.Destroy(gameObject);
-            Debug.Log("hello");
+            Debug.Log("CoinHit");
             this.gameObject.SetActive(false);
         //}
     }

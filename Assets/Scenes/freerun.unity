@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18386836, g: 0.2290156, b: 0.3031127, a: 1}
+  m_IndirectSpecularColor: {r: 0.18386815, g: 0.22901489, b: 0.30311143, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fda841f1ce63e4d4d9ead93b46c821a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 5
+  rotateSpeed: 15
 --- !u!64 &637221560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 2534964839176971238, guid: 72b492ee762cb004b970bdf7c0eccfb1, type: 3}
 --- !u!114 &637221562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1196,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: shipSprite
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f56adb2013cca9646b2b450d94406e8c,
+        type: 3}
+      propertyPath: m_TagString
+      value: ShipChar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f56adb2013cca9646b2b450d94406e8c, type: 3}
 --- !u!1 &1709304675 stripped
@@ -1222,7 +1227,7 @@ MonoBehaviour:
   reverseQuaternion: {x: 0, y: 0, z: 0}
   lerpTime: 2
   joystick: {fileID: 1522275198}
-  sp: 5.76
+  sp: 5
 --- !u!64 &1709304677
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1248,7 +1253,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112

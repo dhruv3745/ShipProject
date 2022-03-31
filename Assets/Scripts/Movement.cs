@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float movementSpeed;
-    float horizontalMovement;
-    float verticalMovement;
+    [SerializeField] public float movementSpeed;
+    private float horizontalMovement;
+    private float verticalMovement;
     private Rigidbody rigidBody;
-    public float rotationMagnitude;
-    public Quaternion QuatTarget;
-    public Vector3 reverseQuaternion;
-    public float lerpTime;
+    [SerializeField] private float rotationMagnitude;
+    [SerializeField] private Quaternion QuatTarget;
+    [SerializeField] private Vector3 reverseQuaternion;
+    [SerializeField] private float lerpTime;
     public Joystick joystick;
     public float sp;
 
@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        rigidBody.velocity = new Vector3(horizontalMovement, verticalMovement, sp);
-        // Quaternion target = Quaternion.Euler(verticalMovement*rotationMagnitude,horizontalMovement*rotationMagnitude,0);
+        rigidBody.velocity = new Vector3(horizontalMovement, verticalMovement,sp);
+        // Quaternion target = Quaternion.Euler(verticalMovement*rotationMagnitude,horizontalMovement*rotationMagnitude,);
     }
 }
