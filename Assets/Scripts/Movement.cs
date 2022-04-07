@@ -14,7 +14,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float lerpTime;
     public Joystick joystick;
     public float sp;
-    public double timeMultiplier = 1;
+    public float timeMultiplier = 1f;
+    public Vector3 shipSpeed = new Vector3(0f,0f,0f);
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +35,10 @@ public class Movement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        rigidBody.velocity = new Vector3(horizontalMovement, verticalMovement,sp)*timeMultiplier;
+        shipSpeed = new Vector3(horizontalMovement, verticalMovement,sp);
+        shipSpeed*=timeMultiplier;
+        rigidBody.velocity = shipSpeed;
         // Quaternion target = Quaternion.Euler(verticalMovement*rotationMagnitude,horizontalMovement*rotationMagnitude,);
-        timeMultiplier+=0.01;
+        timeMultiplier+=0.01f;
     }
 }
