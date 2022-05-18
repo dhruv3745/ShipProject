@@ -39,6 +39,6 @@ public class Movement : MonoBehaviour
         shipSpeed*=timeMultiplier;
         rigidBody.velocity = shipSpeed;
         // Quaternion target = Quaternion.Euler(verticalMovement*rotationMagnitude,horizontalMovement*rotationMagnitude,);
-        timeMultiplier+=0.01f;
+        //timeMultiplier+=0.001f;
     }
 }
