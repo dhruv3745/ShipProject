@@ -33,3 +33,24 @@ Generate UI elements for screen
 materials link:
 https://freepbr.com/c/base-metals/
 https://3dtextures.me/category/metal/
+
+Things to work on:
+
+the rotation of the ship needs to be limited
+
+new obstacle (could also be used to weld the different pieces of tunnel together (ie the tunnels in subway surfer)): 
+- nickname donut
+- basically a sphere with a hole in it, the ship needs to fly inside the hole
+- rng to determine the size of the hole and the location
+
+Sparks
+- using particle system, maybe buy the particle pack or figure out how to make it yourself
+
+experiment with different camera viewing options
+
+add post processing effects : https://www.youtube.com/watch?v=9tjYz6Ab0oc
+- may help with powerups as well as making the game look nicer
+- definitely look into bloom effect
+- use lens distortion to make intro scene with "hyperspace effect
+
+use either linear fog or post processing effects to improve the game look
